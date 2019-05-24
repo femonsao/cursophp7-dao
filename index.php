@@ -17,9 +17,18 @@ require_once("config.php");
 //echo json_encode($search);
 
 //Carrega UmUsuario usando o login e a senha 
-$usuario = new Usuario();
-$usuario->login("jose","1234567890");
+//$usuario = new Usuario();
+///$usuario->login("jose","1234567890");
 
-echo $usuario;
+//echo $usuario;
 
+
+$aluno = new Usuario();
+
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("12345600");
+
+$aluno->insert();
+
+echo $aluno;
 ?>
