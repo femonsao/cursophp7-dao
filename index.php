@@ -22,6 +22,8 @@ require_once("config.php");
 
 //echo $usuario;
 
+/*
+//Criando um novo usuario 
 
 $aluno = new Usuario("aluno","acrro123");
 
@@ -29,4 +31,13 @@ $aluno = new Usuario("aluno","acrro123");
 $aluno->insert();
 
 echo $aluno;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(12);
+
+$usuario->update("natalia", "649731");
+
+echo $usuario;
 ?>
